@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/templates/style.css">
+    <title>Основная страница</title>
+    <script type="text/javascript" src="filename.js"></script>
+</head>
+<body>
+
+<form method="POST" enctype="multipart/form-data" action="/upload">
+    Выберите файл: <input type="file" name="file"><br /><br />
+    <label for="files">Выбранный файл содержит данные по:</label>
+    <select name="name" id="files">
+        <option value="employees" selected>Employees</option>
+        <option value="flights">Flights</option>
+        <option value="roaster">Roaster</option>
+    </select>
+    <br /> <br />
+    <input onclick="functionName()" type="submit" value="Загрузить файл">
+</form>
+<br /><br />
+<form action="/data">
+    <input type="submit" value="Перейти к получению данных">
+</form>
+
+
+<script>
+    function functionName(){
+	alert('Файл выбран, нажмите ОК и дождитесь загрузки!');
+}
+</script>
+</body>
+</html>

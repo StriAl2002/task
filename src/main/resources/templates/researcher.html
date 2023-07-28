@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>searcher</title>
+</head>
+<body>
+<h1>Найти нужную информацию из базы данных!</h1>
+
+<form method="GET" class="search-form" action="/pairings">
+    Введите ID сотрудника, чтобы получить все его пейринги<br />
+    <input name="name" type="search" value="" placeholder="Search" class="search-input">
+    <input type="submit" value="Найти">
+    </div>
+</form>
+<br />
+<form method="GET" class="search-form" action="/flights">
+    Введите ID сотрудника, чтобы получить все его рейсы<br />
+    <input name="name" type="search" value="" placeholder="Search" class="search-input">
+    <input type="submit" value="Найти">
+    </div>
+</form>
+<br />
+<form method="GET" class="search-form" action="/about">
+    Выберите таблицу, чтобы получить ее атрибуты и тип их данных<br />
+    <select name="name" id="files">
+        <option value="employees" selected>Employees</option>
+        <option value="flights">Flights</option>
+        <option value="assignments">Assignments</option>
+        <option value="pairings">Pairings</option>
+    </select>
+    <input type="submit" value="Найти">
+    </div>
+</form>
+<br /><br />
+<form action="/">
+    <input type="submit" value="Загрузить еще">
+</form>
+</body>
+</html>
